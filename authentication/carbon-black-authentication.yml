@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/
+docs: https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+  notes: Carbon Black Cloud does not use OAuth. Access is granted via an API Key
+    (API Id + API Secret) created under Settings > API Access with a Custom Access
+    Level scoped to least privilege.
+schemes:
+- name: XAuthToken
+  type: apiKey
+  in: header
+  header_name: X-Auth-Token
+  value_format: '{API Secret}/{API Id}'
+  description: API Id/Secret credential pair passed directly in the X-Auth-Token
+    request header. Requests also require Content-Type application/json.
+  source: docs
+hosts:
+- environment: Prod 01
+  url: https://dashboard.confer.net
+- environment: Prod 02
+  url: https://defense.conferdeploy.net
+- environment: Prod 05
+  url: https://defense-prod05.conferdeploy.net
+- environment: Prod 06 (EU)
+  url: https://defense-eu.conferdeploy.net
+- environment: Prod NRT (Asia-Pacific / Tokyo)
+  url: https://defense-prodnrt.conferdeploy.net
+- environment: Prod SYD (Sydney)
+  url: https://defense-prodsyd.conferdeploy.net
