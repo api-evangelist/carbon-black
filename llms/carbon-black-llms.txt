@@ -1,0 +1,32 @@
+# Carbon Black
+
+> Carbon Black is an endpoint security company, now part of Broadcom (formerly VMware Carbon Black). Its cloud-native platform delivers next-generation antivirus, endpoint detection and response (EDR), threat hunting, live query, and application control. The Carbon Black Cloud developer network publishes REST APIs, a Python SDK, and integration guides. APIs authenticate with an API Id/Secret pair passed in an X-Auth-Token header against region-specific Carbon Black Cloud hostnames.
+
+## APIs
+
+- [Carbon Black Cloud Platform API](https://developer.carbonblack.com/reference/carbon-black-cloud/platform-apis/): REST APIs for Endpoint Standard, Enterprise EDR, Audit and Remediation (live query), and Workload/Container protection. Base host (Prod 02): https://defense.conferdeploy.net
+
+## Docs
+
+- [Developer Portal](https://developer.carbonblack.com/)
+- [Carbon Black Cloud documentation hub](https://developer.carbonblack.com/reference/carbon-black-cloud/)
+- [Authentication](https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/): API Id/Secret via the X-Auth-Token header ({API Secret}/{API Id})
+- [Platform API reference](https://developer.carbonblack.com/reference/carbon-black-cloud/platform-apis/)
+
+## SDKs & Tools
+
+- [Carbon Black Cloud Python SDK (PyPI)](https://pypi.org/project/carbon-black-cloud-sdk/): pip install carbon-black-cloud-sdk
+- [Carbon Black Cloud Python SDK (source)](https://github.com/carbonblack/carbon-black-cloud-sdk-python)
+- [CBAPI legacy Python bindings (PyPI)](https://pypi.org/project/cbapi/): EDR and App Control
+- [Postman workspace](https://www.postman.com/carbon-black)
+- [GitHub organization](https://github.com/carbonblack)
+
+## Community & Roadmap
+
+- [Broadcom / Symantec Enterprise community](https://community.broadcom.com/symantecenterprise)
+- [Roadmap (Trello)](https://trello.com/b/URJZ5Pn5)
+
+## Repo artifacts
+
+- [Authentication profile](authentication/carbon-black-authentication.yml)
+- [Packages / SDKs](packages/carbon-black-packages.yml)

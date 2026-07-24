@@ -1,8 +1,27 @@
 aid: carbon-black
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carbon-black.png
 name: Carbon Black
-description: 'Carbon Black is a company surfaced as a portfolio company of kleiner-perkins and added to
-  the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Carbon Black is an endpoint security company, now part of Broadcom (formerly
+  VMware Carbon Black), whose cloud-native platform delivers next-generation antivirus,
+  endpoint detection and response (EDR), threat hunting, live query, and application
+  control. The Carbon Black Cloud platform spans Endpoint Standard, Enterprise EDR,
+  Audit and Remediation, and Workload/Container protection, alongside the on-premises
+  Carbon Black EDR and App Control products. Its developer network at developer.carbonblack.com
+  publishes REST APIs, a Python SDK, and integration guides for security operations,
+  threat intelligence, and automated remediation. APIs authenticate with an API Id/Secret
+  pair passed in an X-Auth-Token header against region-specific Carbon Black Cloud hostnames.'
 url: https://raw.githubusercontent.com/api-evangelist/carbon-black/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +31,62 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Security
-apis: []
+- Endpoint Security
+- EDR
+- Threat Detection
+- Cybersecurity
+- Cloud Security
+apis:
+- name: Carbon Black Cloud Platform API
+  description: 'REST APIs for the Carbon Black Cloud platform — Endpoint Standard,
+    Enterprise EDR, Audit and Remediation (live query), and Workload/Container protection.
+    Authentication uses an API Id/Secret pair in an X-Auth-Token header against a
+    region-specific Carbon Black Cloud hostname.'
+  humanURL: https://developer.carbonblack.com/reference/carbon-black-cloud/platform-apis/
+  baseURL: https://defense.conferdeploy.net
+  properties:
+  - type: Authentication
+    url: authentication/carbon-black-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/carbon-black-domain-security.yml
+- type: DeveloperPortal
+  url: https://developer.carbonblack.com/
+- type: Website
+  url: https://developer.carbonblack.com/
+- type: Documentation
+  url: https://developer.carbonblack.com/reference/carbon-black-cloud/
+- type: APIReference
+  url: https://developer.carbonblack.com/reference/carbon-black-cloud/platform-apis/
+- type: GettingStarted
+  url: https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/
+- type: GitHubOrganization
+  url: https://github.com/carbonblack
+- type: Roadmap
+  url: https://trello.com/b/URJZ5Pn5
+- type: Postman
+  url: https://www.postman.com/carbon-black
+- type: Support
+  url: https://community.broadcom.com/symantecenterprise
+- type: SDKs
+  url: packages/carbon-black-packages.yml
+- type: Packages
+  url: packages/carbon-black-packages.yml
+- type: Authentication
+  url: authentication/carbon-black-authentication.yml
+- type: LLMsTxt
+  url: llms/carbon-black-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.carbonblack.com/reference/carbon-black-cloud/integrations/python-sdk/
+packages:
+- language: python
+  registry: pypi
+  name: carbon-black-cloud-sdk
+  url: https://pypi.org/project/carbon-black-cloud-sdk/
+  install: pip install carbon-black-cloud-sdk
+  source: https://github.com/carbonblack/carbon-black-cloud-sdk-python
+  official: true
+  description: Official Carbon Black Cloud Python SDK covering Platform, Endpoint Standard,
+    Audit and Remediation, Enterprise EDR, and Workload protection APIs (MIT license).
+- language: python
+  registry: pypi
+  name: cbapi
+  url: https://pypi.org/project/cbapi/
+  install: pip install cbapi
+  source: https://github.com/carbonblack/cbapi-python
+  official: true
+  description: Legacy Carbon Black API Python bindings (CBAPI) for Carbon Black EDR
+    (Response) and App Control (Protection). Docs at https://cbapi.readthedocs.io/.
